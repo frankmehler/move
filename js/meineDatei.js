@@ -20,8 +20,8 @@ function handleEvent(event) {
         vorigeZeit = zeit;
 
         //parseInt gibt die erste gefundene Zahl (Integer) zurück, px entfernt
-        //let top = parseInt(ball.style.top);
-        //ball.style.top = (top + x) + "px";
+        let top = parseInt(ball.style.top);
+        ball.style.top = (top + event.beta/10) + "px";
 
         // beta = Grad im Wertebereich [-180, +180] nach vorne - hinten +
         // gamma = Grad im Wertebereich [-90, +90] nach rechts + nach links -
